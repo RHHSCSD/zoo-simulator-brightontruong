@@ -5,7 +5,9 @@
 package zoosim;
 
 /**
- *
+ * represents objects in the zoo
+ * common behaviors that objects can perform
+ * objects in the zoo have to implements this
  * @author brigh
  */
 public interface IObject {

@@ -5,7 +5,8 @@
 package zoosim;
 
 /**
- *
+ *represents an animals ability to swim
+ * an entity that can swim must implement this
  * @author brigh
  */
 public interface ISwimmable {

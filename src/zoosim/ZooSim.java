@@ -12,9 +12,11 @@ public class ZooSim {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
         
-        LandAnim lion = new LandAnim(3,"lion", "Mammal", "M", 7, 20, 20, 15, 15, 0, 0, 0, 0, null, "Roar");
+        Image lionImage = new Image(100, 100);
+        Image fishImage = new Image(50, 50);
         
-        WaterAnim fish = new WaterAnim(10, "fish", "Aquatic", "F", 6, 20, 20, 15, 15, 0, 0, 0, 0, null, "blub");
+        LandAnim lion = new LandAnim(3,"lion", "Mammal", "M", 7, 20, 20, 15, 15, 0, 0, 0, lionImage, "Roar");
+        WaterAnim fish = new WaterAnim(10, "fish", "Aquatic", "F", 6, 20, 20, 15, 15, 0, 0, 0, fishImage, "blub");
         
         zoo.addAniamls(lion);
         zoo.addAniamls(fish);

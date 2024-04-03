@@ -5,10 +5,11 @@
 package zoosim;
 
 /**
- *
+ * represents image object with width and height 
+ * used to represents images associated with entities in the zoo
  * @author brigh
  */
-public class Image(){
+public class Image{
     int width; 
     int height;
     

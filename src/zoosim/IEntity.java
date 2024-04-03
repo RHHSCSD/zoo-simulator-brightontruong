@@ -5,7 +5,9 @@
 package zoosim;
 
 /**
- *
+ * represents an entity in the zoo
+ * this interface provides common methods that animals can do
+ * all entities in the zoo implement this interface
  * @author brigh
  */
 public interface IEntity extends IObject {

@@ -5,7 +5,8 @@
 package zoosim;
 
 /**
- *
+ * represents an animals ability to fly
+ * provides method for entities that can fly
  * @author brigh
  */
 public interface IFlyable {
