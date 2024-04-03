@@ -45,9 +45,17 @@ public class Zoo extends Animal{
        }
     }
 
-   public void move() {
+   public void moveAll() {
        for(Animal animal : animals){
-           int newX = animal.getPositionX() + animal.getSpeed() *
+           int newX = animal.getPositionX() + (int) (animal.getSpeed() * Math.cos(Math.toRadians(animal.getDirection())));
+           int newY = animal.getPositionX() + (int) (animal.getSpeed() * Math.sin(Math.toRadians(animal.getDirection())));
+           
+           
+           animal.setPositionX(newX);
+           animal.setPositionX(newY);
+           
+           
+           
        }
        
     }

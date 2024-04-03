@@ -5,19 +5,19 @@
 package zoosim;
 
 /**
- *
- * @author michael.roy-diclemen
+ * this class contains the main method to run the zoo sim
+ * it creates a zoo object adds animals and does various operations on the zoo like feedall
+ * @author brigh
  */
 public class ZooSim {
     public static void main(String[] args) {
+ 
+
+        
+        LandAnim lion = new LandAnim(3,"lion", "Mammal", "M", 7, 20, 20, 15, 15, 0, 0, 0, null, "Roar");
+        WaterAnim fish = new WaterAnim(10, "fish", "Aquatic", "F", 6, 20, 20, 15, 15, 0, 0, 0, null, "blub");
+        
         Zoo zoo = new Zoo();
-        
-        Image lionImage = new Image(100, 100);
-        Image fishImage = new Image(50, 50);
-        
-        LandAnim lion = new LandAnim(3,"lion", "Mammal", "M", 7, 20, 20, 15, 15, 0, 0, 0, lionImage, "Roar");
-        WaterAnim fish = new WaterAnim(10, "fish", "Aquatic", "F", 6, 20, 20, 15, 15, 0, 0, 0, fishImage, "blub");
-        
         zoo.addAniamls(lion);
         zoo.addAniamls(fish);
         
@@ -27,9 +27,7 @@ public class ZooSim {
         
         zoo.SleepAll();
         
-        zoo.move();
-        
-        
+        zoo.moveAll();
         
         
     }

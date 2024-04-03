@@ -5,9 +5,9 @@
 package zoosim;
 
 /**
- *represetns objects found in a zoo like food, rocks, and trees
- * provides infomation about type, position, and size of objects
- * 
+ *represents objects found in a zoo like food, rocks, and trees
+ * provides information about type, position, and size of objects
+ * each zoo object should extend this
  * @author brigh
  */
 public abstract class ZooObjects implements IObject{
